@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+input:focus {
+    box-shadow: 0 0 5px #6a11cb;
+}
+
+.btn-primary {
+    background-color: #6a11cb;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2575fc;
+}
