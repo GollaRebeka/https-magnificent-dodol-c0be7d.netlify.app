@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(to right, #87d9e2, #c4a1a1);
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    background: #68aff6;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.buttons .btn {
+    margin: 5px;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#display {
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    background-color: #bd6f88;
+}

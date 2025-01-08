@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Calculator</title>
+    <!-- Bootstrap for quick styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4 text-primary">Calculator</h1>
+        <div class="calculator shadow-lg">
+            <input type="text" id="display" class="form-control mb-2" disabled>
+            <div class="buttons">
+                <!-- Row 1 -->
+                <div class="row">
+                    <button class="btn btn-danger col" onclick="clearDisplay()">AC</button>
+                    <button class="btn btn-dark col" onclick="calculateSquare()">x²</button>
+                    <button class="btn btn-warning col" onclick="appendValue('%')">%</button>
+                    <button class="btn btn-primary col" onclick="appendValue('/')">/</button>
+                </div>
+                <!-- Row 2 -->
+                <div class="row">
+                    <button class="btn btn-secondary col" onclick="appendValue('7')">7</button>
+                    <button class="btn btn-secondary col" onclick="appendValue('8')">8</button>
+                    <button class="btn btn-secondary col" onclick="appendValue('9')">9</button>
+                    <button class="btn btn-primary col" onclick="appendValue('*')">*</button>
+                </div>
+                <!-- Row 3 -->
+                <div class="row">
+                    <button class="btn btn-secondary col" onclick="appendValue('4')">4</button>
+                    <button class="btn btn-secondary col" onclick="appendValue('5')">5</button>
+                    <button class="btn btn-secondary col" onclick="appendValue('6')">6</button>
+                    <button class="btn btn-primary col" onclick="appendValue('-')">-</button>
+                </div>
+                <!-- Row 4 -->
+                <div class="row">
+                    <button class="btn btn-secondary col" onclick="appendValue('1')">1</button>
+                    <button class="btn btn-secondary col" onclick="appendValue('2')">2</button>
+                    <button class="btn btn-secondary col" onclick="appendValue('3')">3</button>
+                    <button class="btn btn-primary col" onclick="appendValue('+')">+</button>
+                </div>
+                <!-- Row 5 -->
+                <div class="row">
+                    <button class="btn btn-secondary col" onclick="appendValue('0')">0</button>
+                    <button class="btn btn-secondary col" onclick="appendValue('.')">.</button>
+                    <button class="btn btn-success col" onclick="calculateResult()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
